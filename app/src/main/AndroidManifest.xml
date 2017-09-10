@@ -16,8 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".SwipeRefActivity"/>
-        <activity android:name=".TwoWayBindingActivity"/>
+        <activity android:name="baseusage.SwipeRefActivity"/>
+        <activity android:name="baseusage.TwoWayBindingActivity"/>
+        <activity android:name="baseusage.ToastAndSnackBarActivity"/>
     </application>
 
 </manifest>

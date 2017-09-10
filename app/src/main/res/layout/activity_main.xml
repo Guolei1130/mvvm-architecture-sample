@@ -36,7 +36,13 @@
                 android:onClick="@{viewmodel::startTwowayView}"
                 android:textAllCaps="false"
                 />
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/toast_and_snackbar"
+                android:onClick="@{viewmodel::startToastAndSnackBarView}"
+                android:textAllCaps="false"
+                />
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
 </layout>

@@ -1,4 +1,4 @@
-package com.guolei;
+package baseusage;
 
 //                    _    _   _ _
 //__      _____  _ __| | _| |_(_) | ___
@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.guolei.R;
 import com.guolei.databinding.ActivityTowayBinding;
 
 import model.bean.User;

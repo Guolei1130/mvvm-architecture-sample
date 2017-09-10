@@ -1,4 +1,4 @@
-package com.guolei;
+package baseusage;
 
 //                    _    _   _ _
 //__      _____  _ __| | _| |_(_) | ___
@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.guolei.R;
 import com.guolei.databinding.ActivityRefreshBinding;
 
 import viewmodel.SwipeRefActivityViewModel;
@@ -42,7 +43,7 @@ public class SwipeRefActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        mBinding = DataBindingUtil.setContentView(this,R.layout.activity_refresh);
+        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_refresh);
     }
 
     private void initData(){

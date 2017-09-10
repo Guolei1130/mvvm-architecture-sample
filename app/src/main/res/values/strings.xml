@@ -3,4 +3,8 @@
     <string name="swipe_refresh_layout_demo">SwipeRefreshLayut demo</string>
     <string name="empty_str">place_empty</string>
     <string name="two_way_binding">two-way binding</string>
+    <string name="show_toast">show toast</string>
+    <string name="show_snackbar">show snackbar</string>
+    <string name="toast_and_snackbar">toast_and_snackbar</string>
+    <string name="snack_bar_parent">snack_bar_parent</string>
 </resources>

@@ -9,6 +9,7 @@ package viewmodel;
 
 import android.view.View;
 
+import base.BaseViewModel;
 import model.bean.User;
 
 /**
@@ -19,7 +20,7 @@ import model.bean.User;
  * Time: 下午4:41
  * Desc:
  */
-public class TwoWayActivityViewModel {
+public class TwoWayActivityViewModel extends BaseViewModel {
     public User user;
 
     public User getUser() {

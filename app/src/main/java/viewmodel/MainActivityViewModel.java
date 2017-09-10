@@ -7,15 +7,13 @@ package viewmodel;
 //  \_/\_/ \___/|_|  |_|\_\\__|_|_|\___|
 
 
-import android.content.Context;
-import android.content.Intent;
 import android.view.View;
 
-import com.guolei.SwipeRefActivity;
-import com.guolei.TwoWayBindingActivity;
+import baseusage.SwipeRefActivity;
+import baseusage.ToastAndSnackBarActivity;
+import baseusage.TwoWayBindingActivity;
 
 import base.BaseViewModel;
-import base.LoadDataListener;
 
 /**
  * Created by Android Studio.
@@ -33,5 +31,8 @@ public class MainActivityViewModel extends BaseViewModel {
 
     public void startTwowayView(View view) {
         TwoWayBindingActivity.start(view.getContext());
+    }
+    public void startToastAndSnackBarView(View view) {
+        ToastAndSnackBarActivity.start(view.getContext());
     }
 }
