@@ -4,7 +4,7 @@ mvvm architecture sample with databinding
 ### base usage list
 
 - [x] RefreshLayout
-- [ ] Two-way binding
+- [x] Two-way binding
 - [ ] RecyclerView
 - [ ] Toast、SnackBar
 - [ ] Dialog..
