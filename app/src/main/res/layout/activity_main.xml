@@ -29,6 +29,13 @@
                 android:onClick="@{viewmodel::startSwipeRefView}"
                 android:textAllCaps="false"
                 />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/two_way_binding"
+                android:onClick="@{viewmodel::startTwowayView}"
+                android:textAllCaps="false"
+                />
 
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>

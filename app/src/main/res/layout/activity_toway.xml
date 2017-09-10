@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+        <variable
+            name="viewmodel"
+            type="viewmodel.TwoWayActivityViewModel"/>
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:text="@={viewmodel.user.userName,default=@string/empty_str}"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@null"
+            android:textAllCaps="false"
+            android:text="@={viewmodel.user.nikeName,default=@string/empty_str}"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="@{viewmodel.user.userName + viewmodel.user.nikeName,default=@string/empty_str}"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:text="reset"
+            android:onClick="@{viewmodel::reset}"
+            />
+    </LinearLayout>
+</layout>

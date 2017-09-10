@@ -12,6 +12,7 @@ import android.content.Intent;
 import android.view.View;
 
 import com.guolei.SwipeRefActivity;
+import com.guolei.TwoWayBindingActivity;
 
 import base.BaseViewModel;
 import base.LoadDataListener;
@@ -28,5 +29,9 @@ public class MainActivityViewModel extends BaseViewModel {
 
     public void startSwipeRefView(View view) {
         SwipeRefActivity.start(view.getContext());
+    }
+
+    public void startTwowayView(View view) {
+        TwoWayBindingActivity.start(view.getContext());
     }
 }
