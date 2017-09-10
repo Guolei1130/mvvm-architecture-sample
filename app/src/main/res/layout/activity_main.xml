@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
-    <android.support.constraint.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="viewmodel.MainActivityViewModel"/>
+    </data>
+
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.guolei.MainActivity">
-        <Button
-            android:id="@+id/db_base_use"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="databinding的基本用法"
-            android:textAllCaps="false"
-            />
 
-    </android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/refresh_layout_use"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/swipe_refresh_layout_demo"
+                android:onClick="@{viewmodel::startSwipeRefView}"
+                android:textAllCaps="false"
+                />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
 </layout>
 

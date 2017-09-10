@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MVVM</string>
+    <string name="swipe_refresh_layout_demo">SwipeRefreshLayut demo</string>
 </resources>

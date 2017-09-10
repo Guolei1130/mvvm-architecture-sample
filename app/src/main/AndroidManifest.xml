@@ -16,8 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".baseuse.BaseUseActivity">
-        </activity>
+        <activity android:name=".SwipeRefActivity"/>
     </application>
 
 </manifest>
